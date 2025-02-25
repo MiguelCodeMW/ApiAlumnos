@@ -17,11 +17,11 @@ class AlumnoResource extends JsonResource
         // return parent::toArray($request);
         return [
             'id' => $this->id,
-            'nombre' => 'Nombre: ' . $this->nombre,
-            'apellidos' => 'Apellidos: ' . $this->apellidos,
-            'email' => 'Email: ' . $this->email,
-            'telefono' => 'Telefono; ' . $this->telefono,
-            'direccion' => 'Direccion: ' . $this->direccion,
+            'nombre' => $this->nombre,
+            'apellidos' => $this->apellidos,
+            'email' => $this->email,
+            'telefono' => $this->telefono,
+            'direccion' => $this->direccion,
         ];
     }
 }
