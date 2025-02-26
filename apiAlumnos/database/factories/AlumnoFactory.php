@@ -17,11 +17,10 @@ class AlumnoFactory extends Factory
     public function definition(): array
     {
         return [
-        
             'nombre' => fake()->firstName(),
             'apellidos' => fake()->lastName(),
-            'email' => fake()->unique()->safeEmail(), // Genera un email aleatorio único
-            'telefono' => fake()->numerify('#########'), // Genera un número aleatorio de 9 dígitos
+            'email' => fake()->unique()->safeEmail(),
+            'telefono' => fake()->numerify('#########'),//numero de 9 dígitos
             'direccion' => fake()->address()
                 ];
     }

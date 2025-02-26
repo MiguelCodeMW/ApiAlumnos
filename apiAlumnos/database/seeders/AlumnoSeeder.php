@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 class AlumnoSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Ejecuta los seeders en la base de datos
      */
     public function run(): void
     {
@@ -18,29 +18,8 @@ class AlumnoSeeder extends Seeder
             'direccion' => 'Calle direccion 132, 9a'
         ]);
 
-        Alumno::create([
-            'nombre' => "Nombre2",
-            'apellidos' => "Apellido2 apellido2",
-            'email' => "prueba@gmail.com",
-            'telefono' => 957112233,
-            'direccion' => 'Calle direccion 132, 9a'
-        ]);
-
-        Alumno::create([
-            'nombre' => "Nombre3",
-            'apellidos' => "Apellido3 apellido3",
-            'email' => "prueba@gmail.com",
-            'telefono' => 957112233,
-            'direccion' => 'Calle direccion 132, 9a'
-        ]);
-
-        Alumno::create([
-            'nombre' => "Nombre4",
-            'apellidos' => "Apellido4 apellido4",
-            'email' => "prueba@gmail.com",
-            'telefono' => 957112233,
-            'direccion' => 'Calle direccion 132, 9a'
-        ]); */
+        */
+        //Genera 20 alumnos de prueba con datos reales.
         Alumno::factory()->count(20)->create();
     }
 }
