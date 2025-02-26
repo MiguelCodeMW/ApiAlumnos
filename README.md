@@ -9,8 +9,7 @@ Este es un proyecto CRUD para la gestión de alumnos. Consiste en una API desarr
 - Editar información de un alumno.
 - Eliminar alumnos de la base de datos.
 - Validación de datos en el backend.
-- Interfaz de usuario intuitiva con React.
-
+- 
 ## Tecnologías utilizadas
 
 - **Backend:** Laravel 11 con SQLite
