@@ -18,11 +18,11 @@ class AlumnoFactory extends Factory
     {
         return [
         
-            'nombre' => Str::random(25), // Cadena random de 25 caracteres
-            'apellidos' => Str::random(45), // Cadena random de 45 caracteres
-            'email' => $this->faker->unique()->safeEmail(), // Genera un email aleatorio único
-            'telefono' => $this->faker->numerify('#########'), // Genera un número aleatorio de 9 dígitos
-            'direccion' => Str::random(45) // Cadena rand
-        ];
+            'nombre' => fake()->firstName(),
+            'apellidos' => fake()->lastName(),
+            'email' => fake()->unique()->safeEmail(), // Genera un email aleatorio único
+            'telefono' => fake()->numerify('#########'), // Genera un número aleatorio de 9 dígitos
+            'direccion' => fake()->address()
+                ];
     }
 }
