@@ -3,7 +3,7 @@
 return [
     'paths' => ['api/*', 'sanctum/csrf-cookie'],
     'allowed_methods' => ['*'],
-    'allowed_origins' => ['*'], // Orígenes permitidos (frontend)
+    'allowed_origins' => ['http://desplieguedemiaplicacion.duckdns.org:8080'], // Orígenes permitidos (frontend)
     'allowed_origins_patterns' => [],
     'allowed_headers' => ['*'],
     'exposed_headers' => [],
